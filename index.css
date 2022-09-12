@@ -381,15 +381,13 @@
   position: relative;
   z-index: 100;
 }
-#root > header > div:nth-child(1) {
-  width: 100px;
-  height: 7vh;
+#root > header .banner-box-one {
   display: flex;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid #ccc;
 }
-#root > header > div:nth-child(1) .container {
+#root > header .banner-box-one .container {
   width: 2.5vw;
   height: 3vh;
   display: flex;
@@ -399,7 +397,7 @@
   z-index: 10;
   overflow: hidden;
 }
-#root > header > div:nth-child(1) .container .btnContainer {
+#root > header .banner-box-one .container .btnContainer {
   width: 5vw;
   height: 3vh;
   display: flex;
@@ -410,7 +408,7 @@
   cursor: pointer;
   z-index: 20;
 }
-#root > header > div:nth-child(1) .container .btnContainer .btn {
+#root > header .banner-box-one .container .btnContainer .btn {
   z-index: 0;
 }
 #root > header .section-banner {
@@ -433,23 +431,18 @@
   position: absolute;
   left: -15vw;
 }
-#root > header .section-banner > ul {
+#root > header .section-banner .main-banner {
   width: 25vw;
   height: 7vh;
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
-  font-weight: 570;
 }
-#root > header .section-banner > ul > li {
-  width: 6vw;
+#root > header .section-banner .main-banner > li {
   display: flex;
   align-items: center;
   font-family: "RixSGo B";
-}
-#root > header .section-banner > ul > li:nth-child(1) {
-  width: 10vw;
 }
 #root > header #header-icons-container {
   width: 32vw;

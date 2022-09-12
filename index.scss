@@ -31,10 +31,10 @@
 .fadeIn {
   opacity: 1;
 }
-.banner{
+.banner {
   cursor: pointer;
 }
-.banner:hover{
+.banner:hover {
   color: red;
 }
 @mixin programs-venue {
@@ -74,6 +74,7 @@
   font-family: "RixSGo M";
   font-size: 11px;
 }
+
 #root {
   width: 100vw;
   height: 100vh;
@@ -429,9 +430,9 @@
     z-index: 100;
     // border: 1px solid red;
 
-    & > div:nth-child(1) {
-      width: 100px;
-      height: 7vh;
+    .banner-box-one {
+      // width: 100px;
+      // height: 7vh;
       // border: 1px solid red;
       @include felxCenter(center, center);
 
@@ -482,23 +483,23 @@
         // z-index: 20;
       }
 
-      & > ul {
+      .main-banner {
         width: 25vw;
         height: 7vh;
         @include felxCenter(center, center);
         list-style: none;
-        font-weight: 570;
+        // font-weight: 570;
         // border: 1px solid blue;
 
         & > li {
-          width: 6vw;
+          // width: 6vw;
           display: flex;
           align-items: center;
           font-family: "RixSGo B";
         }
-        & > li:nth-child(1) {
-          width: 10vw;
-        }
+        // .wide-banner{
+        //   width: 10vw;
+        // }
       }
     }
 
@@ -524,7 +525,7 @@
           border-top-right-radius: 50%;
           border-bottom-left-radius: 50%;
           border-bottom-right-radius: 50%;
-          &>img{
+          & > img {
             width: 10px;
           }
         }
@@ -775,8 +776,7 @@
         height: 20vh;
         @include felxCenter(center, center);
         z-index: 10;
-      
-        
+
         // border: 1px solid red;
         & > div {
           width: 4vw;
@@ -792,13 +792,12 @@
 
             @include felxCenter(center, center);
           }
-          #slidenavi{
+          #slidenavi {
             width: 10px;
             height: 10px;
             border: 1px solid black;
             border-radius: 50%;
           }
-
         }
       }
     }
@@ -968,3 +967,4 @@
     }
   }
 }
+
