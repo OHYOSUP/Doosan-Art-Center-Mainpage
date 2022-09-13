@@ -46,6 +46,8 @@
 
 #root {
   width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 #root #dropdownMenu {
   width: 100vw;
@@ -380,6 +382,8 @@
   z-index: 100;
 }
 #root > header .banner-box-one {
+  width: 100px;
+  height: 7vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -428,6 +432,7 @@
   align-items: center;
   position: absolute;
   left: -15vw;
+  position: absolute;
 }
 #root > header .section-banner .main-banner {
   width: 25vw;
@@ -436,11 +441,16 @@
   justify-content: center;
   align-items: center;
   list-style: none;
+  font-weight: 570;
 }
 #root > header .section-banner .main-banner > li {
+  width: 6vw;
   display: flex;
   align-items: center;
   font-family: "RixSGo B";
+}
+#root > header .section-banner .main-banner .wide-banner {
+  width: 10vw;
 }
 #root > header #header-icons-container {
   width: 32vw;
@@ -489,6 +499,7 @@
 }
 #root #main {
   width: 100vw;
+  height: 91vh;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -512,7 +523,10 @@
 }
 #root #main #main-slide .poster-container .poster {
   width: 440px;
+  position: absolute;
+  left: 440px;
   display: flex;
+  height: 60vh;
 }
 #root #main #main-slide .poster-container .poster > img {
   width: 100%;
@@ -764,7 +778,7 @@
   justify-content: flex-start;
   align-items: center;
 }
-#root #main #programs #programs-container > div:nth-child(1) > div:nth-child(4) {
+#root #main #programs #programs-container > div:nth-child(1) > div:nth-child(4) > img {
   width: 14vw;
 }
 #root #main #programs #programs-container > div:nth-child(2) > div:nth-child(1) {
@@ -787,10 +801,10 @@
   justify-content: flex-start;
   align-items: center;
 }
-#root #main #programs #programs-container > div:nth-child(2) > div:nth-child(4) {
+#root #main #programs #programs-container > div:nth-child(2) > div:nth-child(4) > img {
   width: 14vw;
 }
-#root #main #programs #programs-container > div:nth-child(3) > div:nth-child(1) {
+#root #main #programs #programs-container > div:nth-child(3) > div:nth-child(1) > {
   width: 13vw;
   display: flex;
   justify-content: flex-start;
@@ -810,7 +824,7 @@
   justify-content: flex-start;
   align-items: center;
 }
-#root #main #programs #programs-container > div:nth-child(3) > div:nth-child(4) {
+#root #main #programs #programs-container > div:nth-child(3) > div:nth-child(4) > img {
   width: 14vw;
 }
 #root #main #programs #programs-container > div:nth-child(3) > div:nth-child(1) {
@@ -833,7 +847,7 @@
   justify-content: flex-start;
   align-items: center;
 }
-#root #main #programs #programs-container > div:nth-child(4) > div:nth-child(4) {
+#root #main #programs #programs-container > div:nth-child(4) > div:nth-child(4) > img {
   width: 14vw;
 }
 #root #main #programs #programs-container > div:nth-child(4) > div:nth-child(1) {
@@ -856,10 +870,16 @@
   justify-content: flex-start;
   align-items: center;
 }
-#root #main #programs #programs-container > div:nth-child(5) > div:nth-child(4) {
+#root #main #programs #programs-container > div:nth-child(5) > div:nth-child(4) > img {
   width: 14vw;
 }
 #root #main #programs #programs-container > div:nth-child(5) > div:nth-child(1) {
+  width: 13vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#root #main #programs #programs-container > div:nth-child(6) > div:nth-child(1) {
   width: 13vw;
   display: flex;
   justify-content: flex-start;
@@ -879,14 +899,8 @@
   justify-content: flex-start;
   align-items: center;
 }
-#root #main #programs #programs-container > div:nth-child(6) > div:nth-child(4) {
+#root #main #programs #programs-container > div:nth-child(6) > div:nth-child(4) > img {
   width: 14vw;
-}
-#root #main #programs #programs-container > div:nth-child(6) > div:nth-child(1) {
-  width: 13vw;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
 }
 #root #main #mainsection-navi-button {
   width: 100vw;
@@ -953,7 +967,7 @@
   font-size: 20px;
 }
 
-@media all and (min-width: 425px) {
+@media (max-width: 425px) {
   #root {
     width: 100%;
     display: flex;

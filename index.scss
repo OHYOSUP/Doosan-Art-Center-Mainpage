@@ -77,8 +77,8 @@
 
 #root {
   width: 100vw;
-  // height: 100vh;
-  // overflow: hidden;
+  height: 100vh;
+  overflow: hidden;
 
   #dropdownMenu {
     width: 100vw;
@@ -431,8 +431,8 @@
     // border: 1px solid red;
 
     .banner-box-one {
-      // width: 100px;
-      // height: 7vh;
+      width: 100px;
+      height: 7vh;
       // border: 1px solid red;
       @include felxCenter(center, center);
 
@@ -479,7 +479,7 @@
         @include felxCenter(flex-start, center);
         position: absolute;
         left: -15vw;
-        // position: absolute;
+        position: absolute;
         // z-index: 20;
       }
 
@@ -488,18 +488,18 @@
         height: 7vh;
         @include felxCenter(center, center);
         list-style: none;
-        // font-weight: 570;
+        font-weight: 570;
         // border: 1px solid blue;
 
         & > li {
-          // width: 6vw;
+          width: 6vw;
           display: flex;
           align-items: center;
           font-family: "RixSGo B";
         }
-        // .wide-banner{
-        //   width: 10vw;
-        // }
+        .wide-banner{
+          width: 10vw;
+        }
       }
     }
 
@@ -549,7 +549,7 @@
 
   #main {
     width: 100vw;
-    // height: 91vh;
+    height: 91vh;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -574,10 +574,10 @@
         // border: 1px solid red;
         .poster {
           width: 440px;
-          // position: absolute;
-          // left: 440px;
+          position: absolute;
+          left: 440px;
           display: flex;
-          // height: 60vh;
+          height: 60vh;
           // border: 1px solid green;
 
           & > img {
@@ -841,7 +841,7 @@
         & > div:nth-child(1) > div:nth-child(3) {
           @include programs-date();
         }
-        & > div:nth-child(1) > div:nth-child(4) {
+        & > div:nth-child(1) > div:nth-child(4)>img {
           @include programs-picture();
         }
         & > div:nth-child(2) > div:nth-child(1) {
@@ -853,10 +853,10 @@
         & > div:nth-child(2) > div:nth-child(3) {
           @include programs-date();
         }
-        & > div:nth-child(2) > div:nth-child(4) {
+        & > div:nth-child(2) > div:nth-child(4)>img {
           @include programs-picture();
         }
-        & > div:nth-child(3) > div:nth-child(1) {
+        & > div:nth-child(3) > div:nth-child(1)> {
           @include programs-venue();
         }
         & > div:nth-child(3) > div:nth-child(2) {
@@ -865,7 +865,7 @@
         & > div:nth-child(3) > div:nth-child(3) {
           @include programs-date();
         }
-        & > div:nth-child(3) > div:nth-child(4) {
+        & > div:nth-child(3) > div:nth-child(4)>img {
           @include programs-picture();
         }
         & > div:nth-child(3) > div:nth-child(1) {
@@ -877,7 +877,7 @@
         & > div:nth-child(4) > div:nth-child(3) {
           @include programs-date();
         }
-        & > div:nth-child(4) > div:nth-child(4) {
+        & > div:nth-child(4) > div:nth-child(4)>img {
           @include programs-picture();
         }
         & > div:nth-child(4) > div:nth-child(1) {
@@ -889,10 +889,13 @@
         & > div:nth-child(5) > div:nth-child(3) {
           @include programs-date();
         }
-        & > div:nth-child(5) > div:nth-child(4) {
+        & > div:nth-child(5) > div:nth-child(4)>img {
           @include programs-picture();
         }
         & > div:nth-child(5) > div:nth-child(1) {
+          @include programs-venue();
+        }
+        & > div:nth-child(6) > div:nth-child(1) {
           @include programs-venue();
         }
         & > div:nth-child(6) > div:nth-child(2) {
@@ -901,11 +904,8 @@
         & > div:nth-child(6) > div:nth-child(3) {
           @include programs-date();
         }
-        & > div:nth-child(6) > div:nth-child(4) {
+        & > div:nth-child(6) > div:nth-child(4)>img {
           @include programs-picture();
-        }
-        & > div:nth-child(6) > div:nth-child(1) {
-          @include programs-venue();
         }
       }
     }
@@ -969,7 +969,7 @@
 }
 
 
-@media all and (min-width: 425px) {
+@media (max-width: 425px) {
 #root{
   width: 100%;
   display: flex;
