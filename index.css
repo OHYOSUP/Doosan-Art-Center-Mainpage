@@ -524,12 +524,12 @@
 #root #main #main-slide .poster-container .poster {
   width: 440px;
   position: absolute;
-  left: 440px;
   display: flex;
   height: 60vh;
 }
 #root #main #main-slide .poster-container .poster > img {
   width: 100%;
+  height: 60vh;
 }
 #root #main #main-slide #blank {
   width: 25vw;
@@ -967,11 +967,11 @@
   font-size: 20px;
 }
 
-@media (max-width: 425px) {
+@media (min-widht: 426px) and (max-width: 1074px) {
   #root {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    overflow: scroll;
   }
   #root > header .banner-box-one {
     width: 15vw;
@@ -1029,6 +1029,9 @@
     width: 200%;
     display: flex;
   }
+  #root #main #main-slide .poster-container .poster {
+    left: 0;
+  }
   #root #main #main-slide #descContainer #descOne {
     width: 100%;
   }
@@ -1061,7 +1064,6 @@
   }
   #root #main #main-slide #descContainer #descTwo {
     width: 100%;
-    left: 100%;
   }
   #root #main #main-slide #descContainer #descTwo > div:nth-child(1) {
     width: 100%;
@@ -1200,6 +1202,46 @@
   #root #main #programs #programs-container > div:nth-child(4) > div:nth-child(4) > img {
     width: 80vw;
   }
+  #root #main #programs #programs-container > div:nth-child(5) > div:nth-child(1) {
+    width: 90%;
+    height: 5vh;
+    font-size: 13px;
+  }
+  #root #main #programs #programs-container > div:nth-child(5) > div:nth-child(2) {
+    width: 90%;
+    height: 5vh;
+    font-size: 20px;
+  }
+  #root #main #programs #programs-container > div:nth-child(5) > div:nth-child(3) {
+    width: 90%;
+    height: 5vh;
+  }
+  #root #main #programs #programs-container > div:nth-child(5) > div:nth-child(4) {
+    width: 90%;
+  }
+  #root #main #programs #programs-container > div:nth-child(5) > div:nth-child(4) > img {
+    width: 80vw;
+  }
+  #root #main #programs #programs-container > div:nth-child(6) > div:nth-child(1) {
+    width: 90%;
+    height: 5vh;
+    font-size: 13px;
+  }
+  #root #main #programs #programs-container > div:nth-child(6) > div:nth-child(2) {
+    width: 90%;
+    height: 5vh;
+    font-size: 20px;
+  }
+  #root #main #programs #programs-container > div:nth-child(6) > div:nth-child(3) {
+    width: 90%;
+    height: 5vh;
+  }
+  #root #main #programs #programs-container > div:nth-child(6) > div:nth-child(4) {
+    width: 90%;
+  }
+  #root #main #programs #programs-container > div:nth-child(6) > div:nth-child(4) > img {
+    width: 80vw;
+  }
   #root #main #mainsection-navi-button {
     width: 100vw;
   }
@@ -1211,5 +1253,387 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+}
+@media (max-width: 455px) {
+  #root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+  }
+  #root > header .banner-box-one {
+    width: 15vw;
+  }
+  #root > header .section-banner .main-banner {
+    display: none;
+  }
+  #root > header .section-banner .doosanLogo > img {
+    width: 30vw;
+  }
+  #root > header #header-icons-container {
+    width: 38vw;
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #root > header #header-icons-container #header-icons-one {
+    width: 17vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #root > header #header-icons-container #header-icons-one > li {
+    width: 20px;
+    height: 20px;
+  }
+  #root > header #header-icons-container #header-icons-one > li > img {
+    width: 10px;
+  }
+  #root > header #header-icons-two {
+    width: 13vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #root > header #header-icons-two > li {
+    width: 30px;
+    height: 7vh;
+  }
+  #root > header #header-icons-two > li > img {
+    width: 20px;
+  }
+  #root #main {
+    display: flex;
+    flex-direction: column;
+  }
+  #root #main #main-slide {
+    width: 100%;
+  }
+  #root #main #main-slide #blank {
+    width: 100%;
+  }
+  #root #main #main-slide #descContainer {
+    width: 200%;
+    display: flex;
+  }
+  #root #main #main-slide .poster-container .poster {
+    left: 0;
+  }
+  #root #main #main-slide #descContainer #descOne {
+    width: 100%;
+  }
+  #root #main #main-slide #descContainer #descOne > div:nth-child(1) {
+    width: 100%;
+  }
+  #root #main #main-slide #descContainer #descOne > div:nth-child(1) > div:nth-child(1) {
+    width: 100%;
+  }
+  #root #main #main-slide #descContainer #descOne > div:nth-child(1) > div:nth-child(2) {
+    width: 100%;
+  }
+  #root #main #main-slide #descContainer #descOne > div:nth-child(2) {
+    width: 100%;
+    height: 10vh;
+  }
+  #root #main #main-slide #descContainer #descOne > div:nth-child(2) > div:nth-child(1) {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #root #main #main-slide #descContainer #descOne > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+    width: 50vw;
+  }
+  #root #main #main-slide #descContainer #descOne > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+    width: 50vw;
+  }
+  #root #main #main-slide #descContainer #descOne > div:nth-child(2) > div:nth-child(2) {
+    width: 70vw;
+  }
+  #root #main #main-slide #descContainer #descTwo {
+    width: 100%;
+    left: 53%;
+  }
+  #root #main #main-slide #descContainer #descTwo > div:nth-child(1) {
+    width: 100%;
+  }
+  #root #main #main-slide #descContainer #descTwo > div:nth-child(1) > div:nth-child(1) {
+    width: 100%;
+  }
+  #root #main #main-slide #descContainer #descTwo > div:nth-child(1) > div:nth-child(2) {
+    width: 100%;
+  }
+  #root #main #main-slide #descContainer #descTwo > div:nth-child(2) {
+    width: 100%;
+    height: 10vh;
+  }
+  #root #main #main-slide #descContainer #descTwo > div:nth-child(2) > div:nth-child(1) {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #root #main #main-slide #descContainer #descTwo > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+    width: 50vw;
+  }
+  #root #main #main-slide #descContainer #descTwo > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+    width: 50vw;
+  }
+  #root #main #main-slide #descContainer #descTwo > div:nth-child(2) > div:nth-child(2) {
+    width: 70vw;
+  }
+  #root #main #main-slide .main-slide-navi {
+    width: 100%;
+    height: 5vh;
+  }
+  #root #main #main-slide .main-slide-navi > div {
+    width: 10vw;
+  }
+  #root #main #programs {
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+  }
+  #root #main #programs > div:nth-child(1) {
+    width: 400%;
+    height: 90vh;
+  }
+  #root #main #programs #programs-container {
+    position: relative;
+    width: 540%;
+    top: 0;
+    left: 0;
+    display: flex;
+  }
+  #root #main #programs #programs-container > div {
+    width: 60%;
+  }
+  #root #main #programs #programs-container > div > div {
+    width: 60%;
+  }
+  #root #main #programs #programs-container > div:nth-child(1) > div:nth-child(1) {
+    width: 60%;
+    height: 5vh;
+    font-size: 13px;
+  }
+  #root #main #programs #programs-container > div:nth-child(1) > div:nth-child(2) {
+    width: 60%;
+    height: 5vh;
+    font-size: 20px;
+  }
+  #root #main #programs #programs-container > div:nth-child(1) > div:nth-child(3) {
+    width: 60%;
+    height: 5vh;
+  }
+  #root #main #programs #programs-container > div:nth-child(1) > div:nth-child(4) {
+    width: 60%;
+  }
+  #root #main #programs #programs-container > div:nth-child(1) > div:nth-child(4) > img {
+    width: 60vw;
+  }
+  #root #main #programs #programs-container > div:nth-child(2) > div:nth-child(1) {
+    width: 60%;
+    height: 5vh;
+    font-size: 13px;
+  }
+  #root #main #programs #programs-container > div:nth-child(2) > div:nth-child(2) {
+    width: 60%;
+    height: 8vh;
+    font-size: 15px;
+  }
+  #root #main #programs #programs-container > div:nth-child(2) > div:nth-child(3) {
+    width: 60%;
+    height: 5vh;
+  }
+  #root #main #programs #programs-container > div:nth-child(2) > div:nth-child(4) {
+    width: 60%;
+  }
+  #root #main #programs #programs-container > div:nth-child(2) > div:nth-child(4) > img {
+    width: 60vw;
+  }
+  #root #main #programs #programs-container > div:nth-child(3) > div:nth-child(1) {
+    width: 90%;
+    height: 5vh;
+    font-size: 13px;
+  }
+  #root #main #programs #programs-container > div:nth-child(3) > div:nth-child(2) {
+    width: 90%;
+    height: 5vh;
+    font-size: 20px;
+  }
+  #root #main #programs #programs-container > div:nth-child(3) > div:nth-child(3) {
+    width: 90%;
+    height: 5vh;
+  }
+  #root #main #programs #programs-container > div:nth-child(3) > div:nth-child(4) {
+    width: 90%;
+  }
+  #root #main #programs #programs-container > div:nth-child(3) > div:nth-child(4) > img {
+    width: 60vw;
+  }
+  #root #main #programs #programs-container > div:nth-child(4) > div:nth-child(1) {
+    width: 90%;
+    height: 5vh;
+    font-size: 13px;
+  }
+  #root #main #programs #programs-container > div:nth-child(4) > div:nth-child(2) {
+    width: 90%;
+    height: 5vh;
+    font-size: 20px;
+  }
+  #root #main #programs #programs-container > div:nth-child(4) > div:nth-child(3) {
+    width: 90%;
+    height: 5vh;
+  }
+  #root #main #programs #programs-container > div:nth-child(4) > div:nth-child(4) {
+    width: 90%;
+  }
+  #root #main #programs #programs-container > div:nth-child(4) > div:nth-child(4) > img {
+    width: 60vw;
+  }
+  #root #main #programs #programs-container > div:nth-child(5) > div:nth-child(1) {
+    width: 90%;
+    height: 5vh;
+    font-size: 13px;
+  }
+  #root #main #programs #programs-container > div:nth-child(5) > div:nth-child(2) {
+    width: 90%;
+    height: 5vh;
+    font-size: 20px;
+  }
+  #root #main #programs #programs-container > div:nth-child(5) > div:nth-child(3) {
+    width: 90%;
+    height: 5vh;
+  }
+  #root #main #programs #programs-container > div:nth-child(5) > div:nth-child(4) {
+    width: 90%;
+  }
+  #root #main #programs #programs-container > div:nth-child(5) > div:nth-child(4) > img {
+    width: 60vw;
+  }
+  #root #main #programs #programs-container > div:nth-child(6) > div:nth-child(1) {
+    width: 90%;
+    height: 5vh;
+    font-size: 13px;
+  }
+  #root #main #programs #programs-container > div:nth-child(6) > div:nth-child(2) {
+    width: 90%;
+    height: 5vh;
+    font-size: 20px;
+  }
+  #root #main #programs #programs-container > div:nth-child(6) > div:nth-child(3) {
+    width: 90%;
+    height: 5vh;
+  }
+  #root #main #programs #programs-container > div:nth-child(6) > div:nth-child(4) {
+    width: 90%;
+  }
+  #root #main #programs #programs-container > div:nth-child(6) > div:nth-child(4) > img {
+    width: 60vw;
+  }
+  #root #main #mainsection-navi-button {
+    width: 100vw;
+  }
+  #root #main #mainsection-navi-button > div:nth-child(1) {
+    width: 70vw;
+  }
+  #root #main #mainsection-navi-button > div:nth-child(1) > div:nth-child(1) {
+    width: 25vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #root #dropdownMenu > div:nth-child(1) {
+    height: 5vh;
+    border-bottom: none;
+  }
+  #root #dropdownMenu > div:nth-child(1) > div:nth-child(1) .dropDown-header-nav {
+    display: none;
+  }
+  #root #dropdownMenu > div:nth-child(1) > div:nth-child(2) .share-icon {
+    display: none;
+  }
+  #root #dropdownMenu .dropdown-main > div > div > div > ul {
+    display: none;
+  }
+  #root #dropdownMenu .dropdown-main > div:nth-child(1) > div:nth-child(2) {
+    display: none;
+  }
+  #root #dropdownMenu .dropdown-main {
+    display: flex;
+    flex-direction: column;
+  }
+  #root #dropdownMenu .dropdown-main > div:nth-child(1) {
+    width: 80vw;
+    height: 16vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  #root #dropdownMenu .dropdown-main > div:nth-child(1) > div {
+    width: 80vw;
+    font-size: 30px;
+    height: 15vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #root #dropdownMenu .dropdown-main > div:nth-child(2) {
+    display: none;
+  }
+  #root #dropdownMenu .dropdown-main > div:nth-child(2) > div > div:nth-child(1) {
+    width: 80vw;
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #root #dropdownMenu .dropdown-main > div:nth-child(3) {
+    width: 80vw;
+    height: 15vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #root #dropdownMenu .dropdown-main > div:nth-child(3) > div {
+    width: 80vw;
+    height: 17vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #root #dropdownMenu .dropdown-main > div:nth-child(3) > div > div:nth-child(1) {
+    width: 80vw;
+    height: 10vh;
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #root #dropdownMenu .dropdown-main > div:nth-child(4) {
+    width: 80vw;
+    height: 10vh;
+  }
+  #root #dropdownMenu .dropdown-main > div:nth-child(4) > div {
+    width: 80vw;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #root #dropdownMenu .dropdown-main > div:nth-child(4) > div:nth-child(1) > div:nth-child(1) {
+    display: none;
+  }
+  #root #dropdownMenu .dropdown-main > div:nth-child(4) > div > div:nth-child(1) {
+    width: 80vw;
+    height: 22vh;
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  #root #dropdownMenu .dropdown-footer {
+    display: none;
   }
 }/*# sourceMappingURL=index.css.map */

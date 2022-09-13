@@ -53,9 +53,14 @@ let navCurrIndex = 0;
 setInterval(navTimer(navCurrIndex, navSlideIndex, navSlideWidth, mainSlideNav),2000)
 
 
+console.log(window.innerWidth)
+let windowWidth = window.innerWidth
 
 
 let offset = 0;
+
+if(matchMedia("screen and (min-width: 1075px) and (max-width: 1740px").matches){
+
 
 programs.addEventListener("wheel", (e) => {
   e.preventDefault();
@@ -73,6 +78,42 @@ programs.addEventListener("wheel", (e) => {
     offset = 600;
   }
 });
+}
+
+if(matchMedia("screen and (min-width: 426px) and (max-width: 1074"))
+
+if(matchMedia("screen and (max-width: 455px)").matches){
+
+  programs.addEventListener("wheel", (e) => {
+    e.preventDefault();
+    offset += Math.sign(e.deltaY) * 60;
+
+    // console.log(offset)
+    // console.log(Math.sign(e.deltaY) * 60)
+    if (offset < 0) {
+      offset = 0;
+      // console.log(offset)
+
+    } else if (offset >= 2425- window.innerWidth) {
+      offset = 2425- window.innerWidth;
+      // console.log(offset)
+
+    }
+    mainContainer.style.transform = `translateX(-${offset}px`;
+  });
+
+  naviBtnContainer.style.display = 'none';
+}
+
+
+
+
+
+
+
+
+
+
 
 rightBtn.addEventListener("click", () => {
   rightNavBtn();
