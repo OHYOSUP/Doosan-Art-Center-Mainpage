@@ -16,7 +16,7 @@ programs.addEventListener("mousemove", (e) => {
   if (!pressed) return
   e.preventDefault();
   x = e.offsetX;
-  console.log(e.offsetX);
+  // console.log(e.offsetX);
   
 
   programsContainer.style.left = `${x - startX}px`;

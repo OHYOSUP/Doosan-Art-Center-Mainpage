@@ -35,6 +35,9 @@ export default function descTimer() {
 
     descContainer.style.left = -(descCurrIndex * descSlideWidth - 4) + "px";
     descContainer.style.transition = "0.3s";
+    // console.log(descContainer.style.left);
+    // console.log(descSlideWidth)
+    // console.log(desc)
 
     naviCircle.classList.remove("active");
     naviCircleTwo.classList.add("active");
