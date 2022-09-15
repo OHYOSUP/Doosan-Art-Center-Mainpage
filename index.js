@@ -119,8 +119,8 @@ if(matchMedia("screen and (max-width: 452px)").matches){
       offset = 0;
       // console.log(offset)
 
-    } else if (offset >= 2425- window.innerWidth) {
-      offset = 2425- window.innerWidth;
+    } else if (offset >= 2050- window.innerWidth) {
+      offset = 2050- window.innerWidth;
       // console.log(offset)
 
     }
